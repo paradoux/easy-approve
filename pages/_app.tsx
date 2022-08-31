@@ -11,7 +11,7 @@ const connectors = {
   injected: {}
 }
 
-function MyApp({ Content, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThirdwebWeb3Provider
       connectors={connectors}
@@ -20,7 +20,7 @@ function MyApp({ Content, pageProps }: AppProps) {
     >
       <Toaster position="bottom-center" toastOptions={{ duration: 3000 }} />
       <PageLayout>
-        <Content {...pageProps} />
+        <Component {...pageProps} />
       </PageLayout>
     </ThirdwebWeb3Provider>
   )
