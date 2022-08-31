@@ -1,24 +1,32 @@
-import { CHAIN_ID, RINKEBY_CHAIN_ID } from "config"
 import { AddEthereumChainParameter } from "@3rdweb/hooks"
-
-// Chains & Icons -> https://github.com/ethereum-lists/chains/tree/master/_data
+import { ETHEREUM_MAINNET_CHAIN_ID, GOERLI_CHAIN_ID } from "config"
 
 interface t {
   [key: number]: AddEthereumChainParameter
 }
 
-export const addNetowrkMetadata: t = {
-  [RINKEBY_CHAIN_ID]: {
-    chainId: `0x${CHAIN_ID.toString(16)}`,
-    chainName: "Rinkeby",
+export const networksMetadata: t = {
+  [ETHEREUM_MAINNET_CHAIN_ID]: {
+    chainId: "1",
+    chainName: "Ethereum Mainnet",
     nativeCurrency: {
-      name: "Rinkeby Ether",
+      name: "Ether",
       symbol: "ETH",
       decimals: 18
     },
-    rpcUrls: ["https://rinkeby.infura.io/v3/"],
-    blockExplorerUrls: ["https://rinkeby.etherscan.io"],
-    iconUrls: [""]
+    rpcUrls: ["https://mainnet.infura.io/v3"],
+    blockExplorerUrls: ["https://etherscan.io"]
+  },
+  [GOERLI_CHAIN_ID]: {
+    chainId: "5",
+    chainName: "Görli",
+    nativeCurrency: {
+      name: "Görli Ether",
+      symbol: "ETH",
+      decimals: 18
+    },
+    rpcUrls: ["https://goerli.infura.io/v3"],
+    blockExplorerUrls: ["https://goerli.etherscan.io"]
   }
 }
 
