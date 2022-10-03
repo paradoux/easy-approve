@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to Easy Approve 👋</h1>
-> Simple UI to easily approve & disapprove ERC20 token transfers from smart contracts on your behalf.
+> Simple UI to easily approve ERC20 token transfers by smart contracts on your behalf.
 
 ## Install
 
