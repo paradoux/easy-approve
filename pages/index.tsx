@@ -16,19 +16,18 @@ const Home: NextPage = () => {
         <div className="relative grid h-full grid-cols-3 gap-10 p-4 pt-40 pb-32 my-auto overflow-hidden border-b xl:px-8 xs:grid-cols-1 border-neutral-600/50">
           <div className="z-10 flex flex-col gap-8">
             <h1 className="flex flex-col gap-4 font-semibold text-7xl sm:text-6xl xs:text-6xl">
-              <span className="text-white">Start</span>
+              <span className="text-white">Approve</span>
               <div>
-                <span className="text-white">use</span>
-                <span className="text-green-500"> Easy</span>
+                <span className="text-white"></span>
+                <span className="text-green-500">
+                  token transfer on your behalf
+                </span>
               </div>
               <div>
-                <span className="text-green-500">Approve</span>
-                <span className="text-white"> Dapp</span>
+                <span className="text-white">in seconds</span>
+                {/* <span className="text-white"> Dapp</span> */}
               </div>
             </h1>
-            <p className="text-gray-300">
-              Approve token transfers on your behalf in seconds
-            </p>
           </div>
           <div className="z-10 flex flex-col col-span-2 gap-2">
             <AllowanceCard
